@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Migration Process</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section>
+        
+        <header class="header">
+            <div class="logo">
+                <img src="logo.png" alt="ampleLogic">
+            </div>
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+            <nav class="menu">
+                <!-- <a href="#"><img src="org.png" alt="">Organization Structure <i class="arrow down"></i></a>
+                <a href="#"><img src="con1.png" alt="">Configurations <i class="arrow down"></i></a>
+                <a href="#"><img src="report.png" alt="">Reports <i class="arrow down"></i></a>
+                <a href="#"><img src="etl.png" alt="">ETL <i class="arrow down"></i></a>
+                <div class="user-profile">
+                    <a href="#"><img src="india.png" alt="User Profile"></a>
+                    <a href="#"><img src="notification.png" alt="User Profile"></a>
+                    <a href="#"><img src="user-icon.png" alt="User Profile"></a>
+                </div> -->
+                <ul>
+                    <li>
+                        <a href="#"><img src="org.png" alt="">Organization Structure <i class="arrow down"></i></a>
+                        <ul class="submenu">
+                            <li><a href="#">Submenu 1</a></li>
+                            <li><a href="#">Submenu 2</a></li>
+                            <li><a href="#">Submenu 3</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><img src="con1.png" alt="">Configurations <i class="arrow down"></i></a>
+                        <ul class="submenu">
+                            <li><a href="#">Submenu 1</a></li>
+                            <li><a href="#">Submenu 2</a></li>
+                            <li><a href="#">Submenu 3</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><img src="report.png" alt="">Reports <i class="arrow down"></i></a>
+                        <ul class="submenu">
+                            <li><a href="#">Submenu 1</a></li>
+                            <li><a href="#">Submenu 2</a></li>
+                            <li><a href="#">Submenu 3</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><img src="etl.png" alt="">ETL <i class="arrow down"></i></a>
+                        <ul class="submenu">
+                            <li><a href="#">Submenu 1</a></li>
+                            <li><a href="#">Submenu 2</a></li>
+                            <li><a href="#">Submenu 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="user-profile">
+                        <a href="#"><img src="india.png" alt="User Profile"></a>
+                        <a href="#"><img src="notification.png" alt="User Profile"></a>
+                        <a href="#"><img src="user-icon.png" alt="User Profile"></a>
+                    </li>
+                </ul>
+            </nav>
+                
+            
+        </header>
+        <button id="startButton">Start</button>
+    <div id="toggleIcon" class="toggle-icon">🔼</div>
+    <footer class="footbottom">
+    
+            <div><img src="logo.png" alt=""></div>
+            
+            <div><p>Copyright &copy; 2010-2023 ampleLogic | All Rights Reserved</p></div>
+            <div><p>V3.1.0</p></div>
+        
+        </footer>
+        <div id="offcanvas" class="offcanvas">
+            
+            <div class="content">
+                <!-- <div class="icon">🔄</div> -->
+                <div class="icon"><img src="icon10.png" alt=""></div>
+                <div class="progress-bar-container">
+                    <p>Migrating Data to selected environment</p>
+                    <div id="progressBar" class="progress-bar">
+                        
+                        <span id="progressPercent" class="progress-percent">0%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="custom-alert">
+        
+        <div class="alert-symbol">✓</div>
+        <div>
+            <h3 class="alert-heading">Alert Title</h3>
+            <p class="alert-paragraph">This is an alert message.</p>
+        </div>
+        <button onclick="closeAlert()">✖</button>
+    </div>
+    
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.menu');
+            menu.classList.toggle('active');
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
